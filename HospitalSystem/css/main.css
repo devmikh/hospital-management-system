@@ -1,0 +1,263 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(37, 147, 184);
+}
+
+.header-menu {
+  height: 10%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.brand {
+  width: 30%;
+  text-align: center;
+}
+
+.options {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options h3 {
+  margin: 10%;
+}
+
+.current {
+  color: rgb(37, 147, 184);
+}
+
+.logout {
+  width: 30%;
+  text-align: center;
+}
+
+.main-content {
+  height: 90%;
+  position: relative;
+}
+
+.bg-image, .boxes, .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-image {
+  
+  background-position: center;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.bg-image-dashboard {
+  background-image: url("../images/dashboard.jpg");
+}
+
+.bg-image-patients {
+  /* background-image: url("../images/patient_background.jpg"); */
+}
+
+.bg-image-doctors {
+  /* background-image: url("../images/doctor_background.jpg"); */
+}
+
+.bg-image-rooms {
+  /* background-image: url("../images/room_background.jpg"); */
+}
+
+.boxes {
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.box {
+  margin-top: 5%;
+  padding: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(204, 204, 204, 0.5);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.amount {
+  font-size: 48px;
+}
+
+.content {
+  z-index: 2;
+  display: flex;
+  justify-content: stretch;
+}
+
+.form {
+  background-color: rgb(240, 236, 236);
+  width: 30%;
+  text-align: center;
+  /* border: 3px solid grey; */
+}
+
+.form form {
+}
+
+.form input[type="text"] {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black;
+  width: 90%;
+  padding: 10px 5px 10px 5px;
+  box-sizing: border-box;
+  margin: 10px 0 20px 0;
+  font-size: 16px;
+}
+
+.form input[type="submit"]{
+  background-color: rgb(69, 112, 206);
+  color: white;
+  width: 90%;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  margin: 50px 0 100px 0;
+  font-size: 20px;
+}
+
+.form input[type="submit"]:hover {
+  background-color: rgb(55, 103, 207);
+}
+
+.form input[type="radio"] {
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+/* .custom_radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+} */
+
+::placeholder {
+  color: darkgrey;
+}
+
+.radio-group {
+  margin: 10px 0 20px 0;
+}
+
+/* select */
+
+
+
+select {
+  width: 90%;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0 20px 0;
+}
+
+
+
+/* end select */
+
+.data {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  overflow: scroll;
+  /* border: 3px solid grey; */
+}
+
+.content form{
+  display: inline-block;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: rgb(112, 112, 224);
+  color: white;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.edit_btn {
+  background-color: rgb(105, 165, 185);
+  border-radius: 6px;
+  color: white;
+  padding: 8px 16px;
+  margin: 0 20px;
+}
+
+.edit_btn:hover {
+  background-color: rgb(57, 154, 187);
+  color: white;
+}
+
+.delete_btn {
+  background-color: rgb(197, 94, 94);
+  border-radius: 6px;
+  color: white;
+  padding: 8px 16px;
+}
+
+.delete_btn:hover {
+  background-color: rgb(197, 65, 65);
+  color: white;
+}
+
+
+@media(max-width: 1200px){
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+  }
+}
